@@ -32,7 +32,7 @@ npm install eause --save
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Mugu!</title>
+    <title>Hello Eause!</title>
     <link rel="stylesheet" href="https://unpkg.com/eause/dist/eause.min.css">
   </head>
   <body>
