@@ -1,6 +1,6 @@
 {
   "name": "eause",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Eause CSS Framework",
   "main": "index.js",
   "scripts": {
