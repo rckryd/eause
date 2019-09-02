@@ -1,0 +1,26 @@
+{
+  "name": "eause",
+  "version": "0.0.0",
+  "description": "Eause CSS Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "sassing": "sass --watch src/sass/main.scss:dist/eause.css --style expanded",
+    "sassingmin": "sass --watch src/sass/main.scss:dist/eause.min.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rckryd/eause.git"
+  },
+  "keywords": [
+    "Eause",
+    "CSS",
+    "Framework"
+  ],
+  "author": "Ricky Riyadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rckryd/eause/issues"
+  },
+  "homepage": "https://github.com/rckryd/eause#readme"
+}

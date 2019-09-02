@@ -1,0 +1,45 @@
+$breakpoints: (
+  small: 0px,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
+
+// 1em = 14px
+
+@mixin device($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) { @content };
+  }
+  @if $breakpoint == tablet-port {
+    @media (max-width: 900px) { @content };
+  }
+  @if $breakpoint == tablet-land {
+    @media (max-width: 1200px) { @content };
+  }
+  @if $breakpoint == desktop-big {
+    @media (min-width: 1800px) { @content };
+  }
+}
+
+@include device(phone) {
+  body {
+    width:200px;
+  }
+}
+@include device(tablet-port) {
+  body {
+    width:200px;
+  }
+}
+@include device(tablet-land) {
+  body {
+    width:200px;
+  }
+}
+@include device(desktop-big) {
+  body {
+    width:200px;
+  }
+}
