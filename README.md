@@ -1,6 +1,6 @@
 # Eause CSS Framework
 
-Eause is a light CSS Framework.
+Eause is a lightweight CSS Framework.
 
 ## Installation
 
