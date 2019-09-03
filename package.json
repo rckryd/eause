@@ -5,15 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"No test specified\"",
-    "watch:sass": "node-sass src/sass/main.scss dist/eause.dev.css -w",
+    "watch:sass": "node-sass src/sass/main.scss dev/css/eause.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "sass src/sass/main.scss:dist/eause.comp.css",
-    "concat:css": "concat -o dist/eause.concat.css dist/eause.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' dist/eause.concat.css -o dist/eause.prefix.css",
-    "expand:css": "sass dist/eause.prefix.css:dist/eause.css --style expanded",
+    "compile:sass": "sass src/sass/main.scss:dev/css/eause.comp.css",
+    "concat:css": "concat -o dev/css/eause.concat.css dev/css/eause.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' dev/css/eause.concat.css -o dev/css/eause.prefix.css",
+    "expand:css": "sass dev/css/eause.prefix.css:dist/eause.css --style expanded",
     "compress:css": "sass dist/eause.css:dist/eause.min.css --style compressed",
-    "build:css": "npm-run-all compile:sass concat:css prefix:css expand:css compress:css"
+    "build": "npm-run-all compile:sass concat:css prefix:css expand:css compress:css"
   },
   "repository": {
     "type": "git",
