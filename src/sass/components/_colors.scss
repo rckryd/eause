@@ -1,90 +1,93 @@
-$color-primary-50: #e7ebf8; //E3F2FD;
-$color-primary-300: #3d5bc4; //64B5F6;
-$color-primary-400: #2447bc; //42A5F5;
-$color-primary-500: #0c32b5; //2196F3;
-$color-primary-600: #0b2da3; //1E88E5;
-$color-primary-700: #0a2891; //1976D2;
-$color-primary-800: #08237f; //1565C0;
-$color-primary-900: #071e6d; //0D47A1;
+// $color-primary-50: #e7ebf8; //E3F2FD;
+// $color-primary-300: #3d5bc4; //64B5F6;
+// $color-primary-400: #2447bc; //42A5F5;
+// $color-primary-500: #0c32b5; //2196F3;
+// $color-primary-600: #0b2da3; //1E88E5;
+// $color-primary-700: #0a2891; //1976D2;
+// $color-primary-800: #08237f; //1565C0;
+// $color-primary-900: #071e6d; //0D47A1;
 
-$color-secondary-50: #e6fdfd;
-$color-secondary-300: #33eded;
-$color-secondary-400: #1aeaea;
-$color-secondary-500: #00e8e8;
-$color-secondary-600: #00d1d1;
-$color-secondary-700: #00baba;
-$color-secondary-800: #00a2a2;
-$color-secondary-900: #008b8b;
+// $color-primary: #00699b;
+// $color-secondary: #2cabe2;
 
-$ll-theme-colors: (
-    primary: (
-        base: $color-primary-500,
-        50: $color-primary-50,
-        300: $color-primary-300,
-        400: $color-primary-400,
-        600: $color-primary-600,
-        700: $color-primary-700,
-        800: $color-primary-800
-    ),
-    secondary: (
-        base: $color-secondary-500,
-        50: $color-secondary-50,
-        300: $color-secondary-300,
-        400: $color-secondary-400,
-        600: $color-secondary-600,
-        700: $color-secondary-700,
-        800: $color-secondary-800
-    ),
-);
+// $color-secondary-50: #e6fdfd;
+// $color-secondary-300: #33eded;
+// $color-secondary-400: #1aeaea;
+// $color-secondary-500: #00e8e8;
+// $color-secondary-600: #00d1d1;
+// $color-secondary-700: #00baba;
+// $color-secondary-800: #00a2a2;
+// $color-secondary-900: #008b8b;
 
-
-
-// For .bg-* classes
-@mixin ll-background-variant($color) {
-    background-color: $color;
-}
-
-// For .text-* classes
-@mixin ll-text-color-variant($color) {
-    color: $color;
-}
+// $ll-theme-colors: (
+//     primary: (
+//         base: $color-primary-500,
+//         50: $color-primary-50,
+//         300: $color-primary-300,
+//         400: $color-primary-400,
+//         600: $color-primary-600,
+//         700: $color-primary-700,
+//         800: $color-primary-800
+//     ),
+//     secondary: (
+//         base: $color-secondary-500,
+//         50: $color-secondary-50,
+//         300: $color-secondary-300,
+//         400: $color-secondary-400,
+//         600: $color-secondary-600,
+//         700: $color-secondary-700,
+//         800: $color-secondary-800
+//     ),
+// );
 
 
 
+// // For .bg-* classes
+// @mixin ll-background-variant($color) {
+//     background-color: $color;
+// }
+
+// // For .text-* classes
+// @mixin ll-text-color-variant($color) {
+//     color: $color;
+// }
 
 
 
-@each $color-key, $color-variants in $ll-theme-colors {
 
-    // Get main and 50 shades from the map
-    $base-color-value: map-get($color-variants, 'base');
-    $shade-50: map-get($color-variants, 50);
 
-    // Generate .alpha-* classes
-    .alpha-#{$color-key} {
-        @include ll-background-variant($shade-50);
-    }
 
-    // Generate .text-* classes
-    .text-#{$color-key} {
-        @include ll-text-color-variant($base-color-value);
-    }
+// @each $color-key, $color-variants in $ll-theme-colors {
+
+//     // Get main and 50 shades from the map
+//     $base-color-value: map-get($color-variants, 'base');
+//     $shade-50: map-get($color-variants, 50);
+
+//     // Generate .alpha-* classes
+//     .alpha-#{$color-key} {
+//         @include ll-background-variant($shade-50);
+//     }
+
+//     // Generate .text-* classes
+//     .text-#{$color-key} {
+//         @include ll-text-color-variant($base-color-value);
+//     }
   
-    @each $variant-name, $variant-value in $color-variants {
-          $shade-color-value: map-get($color-variants, $variant-name);
+//     @each $variant-name, $variant-value in $color-variants {
+//           $shade-color-value: map-get($color-variants, $variant-name);
 
-          // Ignore 'base' and '50' tones
-          @if ($variant-name != 'base' and $variant-name != 50) {
+//           // Ignore 'base' and '50' tones
+//           @if ($variant-name != 'base' and $variant-name != 50) {
 
-              // Generate .text-*-* classes
-              .text-#{$color-key}-#{$variant-name} {
-                  @include ll-text-color-variant($shade-color-value);
-              }
+//               // Generate .text-*-* classes
+//               .text-#{$color-key}-#{$variant-name} {
+//                   @include ll-text-color-variant($shade-color-value);
+//               }
 
-              // Generate .bg-*-* classes
-              .bg-#{$color-key}-#{$variant-name} {
-                  @include ll-background-variant($shade-color-value);
-              }
-  }
-    }
-}
+//               // Generate .bg-*-* classes
+//               .bg-#{$color-key}-#{$variant-name} {
+//                   @include ll-background-variant($shade-color-value);
+//               }
+//   }
+//     }
+// }
