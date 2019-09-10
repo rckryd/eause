@@ -1,18 +1,5 @@
 :root {
-    --color-primary: #eb2f64;
-    --color-primary-light: #ff3366;
-    --color-primary-dark: #ba265d;
-
-    --color-grey-light-1: #faf9f9;
-    --color-grey-light-2: #f4f2f2;
-    --color-grey-light-3: #f0eeee;
-    --color-grey-light-4: #ccc;
-
-    --color-grey-dark-1: #333;
-    --color-grey-dark-2: #777;
-    --color-grey-dark-3: #999;
-
-    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .03);
+    --color-primary: $color-primary;
 }
 
 * {
@@ -26,25 +13,41 @@
 }
 
 ::selection {
-    background-color: #00ff;
+    background-color: $color-primary;
     color: #fff;
 }
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
+    font-size: 10px;
 }
 
 body {
-    font-family: $fontFamily;
-    font-size: $fontBody;
-    font-weight: $fwNormal;
-    line-height: $lhBase;
-    color: var(--color-grey-dark-2);
-    background-color: $colorBg;
-    background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-family: $font-family;
+    font-size: $font-body;
+    font-weight: $fw-normal;
+    line-height: $lh-base;
+    color: $color-base;
+    background-color: $color-bg;
+}
 
-    min-height: 100vh;
+h {
+    &1 {
+        font-size: 6rem;
+    }
+    &2 {
+        font-size: 4.8rem;
+    }
+    &3 {
+        font-size: 3.2rem;
+    }
+    &4 {
+        font-size: 2.4rem;
+    }
+    &5 {
+        font-size: 2rem;
+    }
+    &6 {
+        font-size: 1.8rem;
+    }
 }

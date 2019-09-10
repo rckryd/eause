@@ -1,0 +1,236 @@
+// ##########################################################################
+// ######## ≥ Mobile Screen
+
+.container {
+    width: 100%;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1.6rem;
+    margin-left: -1.6rem;
+    &.no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+        > .col,
+        > [class*="col-"] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    > .col,
+    > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+        position: relative;
+        width: 100%;
+        padding-right: 1.6rem;
+        padding-left: 1.6rem;
+    }
+}
+
+@for $column from 1 through 12 {
+    .col {
+        &-#{$column} {
+            flex: 0 0 percentage($column/12);
+            max-width: percentage($column/12);
+        }
+    }
+}
+
+@for $offset from 1 through 11 {
+    .offset {
+        &-#{$offset} {
+            margin-left: percentage($offset/12);
+        }
+    }
+}
+
+@for $order from 0 through 12 {
+    .order {
+        &-#{$order} {
+            order: $order;
+        }
+    }
+}
+
+.order-first {
+    order: -1;
+}
+
+.order-last {
+    order: 13;
+}
+
+// ##########################################################################
+// ######## ≥ Tablet Small Screen
+
+@include device(ts) {
+    .container {
+        max-width: 540px;
+    }
+
+    @for $column from 1 through 12 {
+        .col {
+            &-ts-#{$column} {
+                flex: 0 0 percentage($column/12);
+                max-width: percentage($column/12);
+            }
+        }
+    }
+
+    @for $offset from 1 through 11 {
+        .offset {
+            &-ts-#{$offset} {
+                margin-left: percentage($offset/12);
+            }
+        }
+    }
+
+    @for $order from 0 through 12 {
+        .order {
+            &-ts-#{$order} {
+                order: $order;
+            }
+        }
+    }
+
+    .order-ts-first {
+        order: -1;
+    }
+    
+    .order-ts-last {
+        order: 13;
+    }
+}
+
+// ##########################################################################
+// ######## ≥ Tablet Large Screen
+
+@include device(tl) {
+    .container {
+        max-width: 720px;
+    }
+
+    @for $column from 1 through 12 {
+        .col {
+            &-tl-#{$column} {
+                flex: 0 0 percentage($column/12);
+                max-width: percentage($column/12);
+            }
+        }
+    }
+
+    @for $offset from 1 through 11 {
+        .offset {
+            &-tl-#{$offset} {
+                margin-left: percentage($offset/12);
+            }
+        }
+    }
+
+    @for $order from 0 through 12 {
+        .order {
+            &-tl-#{$order} {
+                order: $order;
+            }
+        }
+    }
+
+    .order-tl-first {
+        order: -1;
+    }
+    
+    .order-tl-last {
+        order: 13;
+    }
+}
+
+// ##########################################################################
+// ######## ≥ Desktop Small (Mainstream Desktop) Screen
+
+@include device(ds) {
+    .container {
+        max-width: 960px;
+    }
+
+    @for $column from 1 through 12 {
+        .col {
+            &-ds-#{$column} {
+                flex: 0 0 percentage($column/12);
+                max-width: percentage($column/12);
+            }
+        }
+    }
+
+    @for $offset from 1 through 11 {
+        .offset {
+            &-ds-#{$offset} {
+                margin-left: percentage($offset/12);
+            }
+        }
+    }
+
+    @for $order from 0 through 12 {
+        .order {
+            &-ds-#{$order} {
+                order: $order;
+            }
+        }
+    }
+
+    .order-ds-first {
+        order: -1;
+    }
+    
+    .order-ds-last {
+        order: 13;
+    }
+}
+
+// ##########################################################################
+// ######## ≥ Desktop Large Screen
+
+@include device(dl) {
+    .container {
+        max-width: 1140px;
+    }
+
+    @for $column from 1 through 12 {
+        .col {
+            &-dl-#{$column} {
+                flex: 0 0 percentage($column/12);
+                max-width: percentage($column/12);
+            }
+        }
+    }
+
+    @for $offset from 1 through 11 {
+        .offset {
+            &-dl-#{$offset} {
+                margin-left: percentage($offset/12);
+            }
+        }
+    }
+
+    @for $order from 0 through 12 {
+        .order {
+            &-dl-#{$order} {
+                order: $order;
+            }
+        }
+    }
+
+    .order-dl-first {
+        order: -1;
+    }
+    
+    .order-dl-last {
+        order: 13;
+    }
+}

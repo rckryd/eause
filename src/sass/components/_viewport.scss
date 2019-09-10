@@ -1,45 +1,14 @@
-$breakpoints: (
-  small: 0px,
-  medium: 640px,
-  large: 1024px,
-  xlarge: 1200px,
-  xxlarge: 1440px,
-);
-
-// 1em = 14px
-
 @mixin device($breakpoint) {
-  @if $breakpoint == phone {
-    @media (max-width: 640px) { @content };
-  }
-  @if $breakpoint == tablet-port {
-    @media (max-width: 992px) { @content };
-  }
-  @if $breakpoint == tablet-land {
-    @media (max-width: 1248px) { @content };
-  }
-  @if $breakpoint == desktop-big {
-    @media (min-width: 1840px) { @content };
-  }
-}
-
-@include device(phone) {
-  body {
-    width:200px;
-  }
-}
-@include device(tablet-port) {
-  body {
-    width:200px;
-  }
-}
-@include device(tablet-land) {
-  body {
-    width:200px;
-  }
-}
-@include device(desktop-big) {
-  body {
-    width:200px;
-  }
+    @if $breakpoint == ts { // Tablet Small
+        @media (min-width: 528px) { @content };
+    }
+    @if $breakpoint == tl { // Tabled Large
+        @media (min-width: 864px) { @content };
+    }
+    @if $breakpoint == ds { // Desktop Small (Mainstream Desktop)
+        @media (min-width: 1216px) { @content };
+    }
+    @if $breakpoint == dl { // Desktop Large
+        @media (min-width: 1840px) { @content };
+    }
 }

@@ -1,11 +1,14 @@
-$fontFamily:'Open Sans', sans-serif;
-$fontBase: 10px;
-$fontBody: 1.4rem;
+$font-family:'Open Sans', sans-serif;
+$font-base: 10px;
+$font-body: 1.4rem;
 
-$fwNormal: 400;
-$fwBold: 700;
+$fw-normal: 400;
+$fw-bold: 700;
 
-$lhBase: 1.5;
+$lh-base: 1.5;
 
-$colorBg:#fff;
-$colorBase:#353535;
+$color-bg:#fff;
+$color-base:#353535;
+$color-primary:#168abf;
+
+$shadow: 0 .2rem .6rem 0 rgba(128, 128, 136, 0.2);
