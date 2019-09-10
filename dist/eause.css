@@ -1,5 +1,6 @@
 :root {
-  --color-primary: $color-primary;
+  --color-primary: #2cabe2;
+  --color-secondary: #ff5128;
 }
 
 * {
@@ -11,7 +12,7 @@
 }
 
 ::selection {
-  background-color: #168abf;
+  background-color: #2cabe2;
   color: #fff;
 }
 
@@ -90,6 +91,12 @@ h6 {
   width: 100%;
   padding-right: 1.6rem;
   padding-left: 1.6rem;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .col-1 {
@@ -258,7 +265,13 @@ h6 {
 
 @media (min-width: 528px) {
   .container {
-    max-width: 540px;
+    max-width: 53.6rem;
+  }
+
+  .col-ts {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 
   .col-ts-1 {
@@ -427,7 +440,13 @@ h6 {
 }
 @media (min-width: 864px) {
   .container {
-    max-width: 720px;
+    max-width: 72rem;
+  }
+
+  .col-tl {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 
   .col-tl-1 {
@@ -596,7 +615,13 @@ h6 {
 }
 @media (min-width: 1216px) {
   .container {
-    max-width: 960px;
+    max-width: 96rem;
+  }
+
+  .col-ds {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 
   .col-ds-1 {
@@ -765,7 +790,13 @@ h6 {
 }
 @media (min-width: 1840px) {
   .container {
-    max-width: 1140px;
+    max-width: 114.4rem;
+  }
+
+  .col-dl {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 
   .col-dl-1 {
