@@ -1,14 +1,46 @@
-$font-family:'Open Sans', sans-serif;
-$font-base: 10px;
-$font-body: 1.4rem;
+// ##########################################################################
+// ######## BREAKPOINTS
+// # < ts   : Mobile Screen (default)
+// # ts     : ≥ Tablet Small Screen
+// # tl     : ≥ Tablet Large Screen
+// # ds     : ≥ Desktop Small (Mainstream Desktop) Screen
+// # dl     : ≥ Desktop Large
 
-$fw-normal: 400;
-$fw-bold: 700;
+// Media Queries Breakpoints
+$bp-ts          : 528px;
+$bp-tl          : 864px;
+$bp-ds          : 1216px;
+$bp-dl          : 1840px;
 
-$lh-base: 1.5;
+// Max Width Container
+$con-ts         : 53.6rem;
+$con-tl         : 72rem;
+$con-ds         : 96rem;
+$con-dl         : 114.4rem;
 
-$color-bg:#fff;
-$color-base:#353535;
-$color-primary:#168abf;
+// ##########################################################################
+// ######## FONTS
+$font-family    :'Open Sans', sans-serif;
+$font-base      : 10px;     // for setting 'rem' value (equal = 1rem);
+$font-body      : 1.4rem;   // body text
+$fw-normal      : 400;      // font-weight: normal
+$fw-bold        : 700;      // font-weight: bold
+$lh-base        : 1.5;      // line-height
 
+// ##########################################################################
+// ######## COLORS
+// Theme Colors
+$color-bg           : #fff;
+$color-base         : #353535;
+$color-primary      : #2cabe2;
+$color-secondary    : #ff5128;
+
+// Semantic Colors
+$color-success      : #42dc85;
+$color-info         : #1d91f4;
+$color-warning      : #ffb627;
+$color-error        : #e52a34;
+
+// ##########################################################################
+// ######## MISCELLANEOUS
 $shadow: 0 .2rem .6rem 0 rgba(128, 128, 136, 0.2);

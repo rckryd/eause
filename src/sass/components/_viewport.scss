@@ -1,14 +1,14 @@
 @mixin device($breakpoint) {
-    @if $breakpoint == ts { // Tablet Small
-        @media (min-width: 528px) { @content };
+    @if $breakpoint == ts {
+        @media (min-width: $bp-ts) { @content };
     }
-    @if $breakpoint == tl { // Tabled Large
-        @media (min-width: 864px) { @content };
+    @if $breakpoint == tl {
+        @media (min-width: $bp-tl) { @content };
     }
-    @if $breakpoint == ds { // Desktop Small (Mainstream Desktop)
-        @media (min-width: 1216px) { @content };
+    @if $breakpoint == ds {
+        @media (min-width: $bp-ds) { @content };
     }
-    @if $breakpoint == dl { // Desktop Large
-        @media (min-width: 1840px) { @content };
+    @if $breakpoint == dl {
+        @media (min-width: $bp-dl) { @content };
     }
 }

@@ -1,5 +1,5 @@
 // ##########################################################################
-// ######## ≥ Mobile Screen
+// ######## ≥ MOBILE SCREEN
 
 .container {
     width: 100%;
@@ -32,6 +32,12 @@
         padding-right: 1.6rem;
         padding-left: 1.6rem;
     }
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 @for $column from 1 through 12 {
@@ -68,11 +74,17 @@
 }
 
 // ##########################################################################
-// ######## ≥ Tablet Small Screen
+// ######## ≥ TABLET SMALL SCREEN
 
 @include device(ts) {
     .container {
-        max-width: 540px;
+        max-width: $con-ts;
+    }
+
+    .col-ts {
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
 
     @for $column from 1 through 12 {
@@ -110,11 +122,17 @@
 }
 
 // ##########################################################################
-// ######## ≥ Tablet Large Screen
+// ######## ≥ TABLET LARGE SCREEN
 
 @include device(tl) {
     .container {
-        max-width: 720px;
+        max-width: $con-tl;
+    }
+
+    .col-tl {
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
 
     @for $column from 1 through 12 {
@@ -152,11 +170,17 @@
 }
 
 // ##########################################################################
-// ######## ≥ Desktop Small (Mainstream Desktop) Screen
+// ######## ≥ DESKTOP SMALL (MAINSTREAM DESKTOP) SCREEN
 
 @include device(ds) {
     .container {
-        max-width: 960px;
+        max-width: $con-ds;
+    }
+
+    .col-ds {
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
 
     @for $column from 1 through 12 {
@@ -194,11 +218,17 @@
 }
 
 // ##########################################################################
-// ######## ≥ Desktop Large Screen
+// ######## ≥ DESKTOP LARGE SCREEN
 
 @include device(dl) {
     .container {
-        max-width: 1140px;
+        max-width: $con-dl;
+    }
+
+    .col-dl {
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
 
     @for $column from 1 through 12 {

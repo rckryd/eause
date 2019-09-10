@@ -38,10 +38,10 @@ npm install eause --save
   <body>
   <section >
     <div class="container">
-      <h1 class="title">
+      <h1>
         Hello World
       </h1>
-      <p class="subtitle">
+      <p>
         My first website with <strong>Eause</strong>!
       </p>
     </div>
