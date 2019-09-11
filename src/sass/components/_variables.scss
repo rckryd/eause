@@ -19,7 +19,8 @@ $con-ds         : 114.4rem;
 
 // ##########################################################################
 // ######## FONTS
-$font-family    :'Open Sans', sans-serif;
+$font-source    :'https://fonts.googleapis.com/css?family=Asap:400,700&display=swap';
+$font-family    :'Asap', sans-serif;
 $font-base      : 10px;     // for setting 'rem' value (equal = 1rem);
 $font-body      : 1.4rem;   // body text
 $fw-normal      : 400;      // font-weight: normal

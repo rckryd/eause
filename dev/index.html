@@ -4,70 +4,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/eause.css">
     <title>Eause Demo</title>
+    <style>
+        body {
+            margin: 3.2rem 0;
+        }
+
+        h2 {
+            margin-bottom: 4rem;
+        }
+
+        h3 {
+            margin-bottom: 3.2rem;
+        }
+
+        p {
+            margin: 2.4rem 0 1.6rem;
+        }
+
+        .content {
+            margin-bottom: 3.2rem;
+        }
+
+        .wrapper {
+            background-color: #d7d7d7;
+            padding: .8rem 1.6rem;
+            margin: 1.6rem 0;
+        }
+
+        .color-primary {
+            color: #2cabe2;
+        }
+
+        .color-secondary {
+            color: #ff5128;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="grids">
-            <div class="grid-12 grid-ts-1">
-                <div class="box">grid-12 grid-ts-1</div>
-            </div>
-
-            <div class="grid-12 grid-ts-11">
-                <div class="box">grid-12 grid-ts-11</div>
-            </div>
-
-            <div class="grid-12 grid-ts-2">
-                <div class="box">grid-12 grid-ts-2</div>
-            </div>
-
-            <div class="grid-12 grid-ts-10">
-                <div class="box">grid-12 grid-ts-10</div>
-            </div>
-
-            <div class="grid-12 grid-ts-3">
-                <div class="box">grid-12 grid-ts-3</div>
-            </div>
-
-            <div class="grid-12 grid-ts-9">
-                <div class="box">grid-12 grid-ts-9</div>
-            </div>
-
-            <div class="grid-12 grid-ts-4">
-                <div class="box">grid-12 grid-ts-4</div>
-            </div>
-
-            <div class="grid-12 grid-ts-8">
-                <div class="box">grid-12 grid-ts-8</div>
-            </div>
-
-            <div class="grid-12 grid-ts-5">
-                <div class="box">grid-12 grid-ts-5</div>
-            </div>
-
-            <div class="grid-12 grid-ts-7">
-                <div class="box">grid-12 grid-ts-7</div>
-            </div>
-
-            <div class="grid-12 grid-ts-6">
-                <div class="box">grid-12 grid-ts-6</div>
-            </div>
-
-            <div class="grid-12 grid-ts-6">
-                <div class="box">grid-12 grid-ts-6</div>
-            </div>
-            
+    <header>
+        <div class="container">
+            <h2>Eause CSS Documentation</h2>
         </div>
-
-        <div class="grids">
-            <div class="grid"><div class="box">grid</div></div>
-            <div class="grid"><div class="box">grid</div></div>
-            <div class="grid"><div class="box">grid</div></div>
-            <div class="grid"><div class="box">grid</div></div>
-            <div class="grid"><div class="box">grid</div></div>
+    </header>
+    
+    <section>
+        <div class="container">
+            <h3>Grid System</h3>
+            <div class="content">
+                <h4>12 Columns Grid System</h4>
+                <p>Use class <span class="color-secondary">.grids</span> on columns grid parent</p>
+                <div class="wrapper">
+                    <div><strong>mb</strong>: (&lt; 528px) Mobile Screen</div>
+                    <div>grid-<strong>ts</strong>-12: (≥ 528px) Tablet Small Screen</div>
+                    <div>grid-<strong>tl</strong>-12: (≥ 864px) Tablet Large Screen</div>
+                    <div>grid-<strong>ds</strong>-12: (≥ 1216px) Desktop Small Screen (Mainstream Desktop)</div>
+                    <div>grid-<strong>dl</strong>-12: (≥ 1840px) Desktop Large Screen</div>
+                </div>
+                <div class="grids">
+                    <div class="grid-12">
+                        <div class="box">.grid-12</div>
+                    </div>
+                    <div class="grid-12 grid-ts-6">
+                        <div class="box">.grid-12 .grid-ts-6</div>
+                    </div>
+                    <div class="grid-12 grid-ts-6">
+                        <div class="box">.grid-12 .grid-ts-6</div>
+                    </div>
+                    <div class="grid-12 grid-tl-4">
+                        <div class="box">.grid-12 .grid-tl-4</div>
+                    </div>
+                    <div class="grid-12 grid-tl-4">
+                        <div class="box">.grid-12 .grid-tl-4</div>
+                    </div>
+                    <div class="grid-12 grid-tl-4">
+                        <div class="box">.grid-12 .grid-tl-4</div>
+                    </div>
+                    <div class="grid-12 grid-ds-3">
+                        <div class="box">.grid-12 .grid-ds-3</div>
+                    </div>
+                    <div class="grid-12 grid-ds-3">
+                        <div class="box">.grid-12 .grid-ds-3</div>
+                    </div>
+                    <div class="grid-12 grid-ds-3">
+                        <div class="box">.grid-12 .grid-ds-3</div>
+                    </div>
+                    <div class="grid-12 grid-ds-3">
+                        <div class="box">.grid-12 .grid-ds-3</div>
+                    </div>
+                    <div class="grid-12 grid-ds-2">
+                        <div class="box">.grid-12 .grid-ds-2</div>
+                    </div>
+                    <div class="grid-12 grid-ds-2">
+                        <div class="box">.grid-12 .grid-ds-2</div>
+                    </div>
+                    <div class="grid-12 grid-ds-2">
+                        <div class="box">.grid-12 .grid-ds-2</div>
+                    </div>
+                    <div class="grid-12 grid-ds-2">
+                        <div class="box">.grid-12 .grid-ds-2</div>
+                    </div>
+                    <div class="grid-12 grid-ds-2">
+                        <div class="box">.grid-12 .grid-ds-2</div>
+                    </div>
+                    <div class="grid-12 grid-ds-2">
+                        <div class="box">.grid-12 .grid-ds-2</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content">
+                <h4>Auto Resize Columns</h4>
+                <p>Auto resize column with only class <span class="color-secondary">.grid</span>.</p>
+    
+                <div class="grids">
+                    <div class="grid">
+                        <div class="box">.grid</div>
+                    </div>
+                    <div class="grid">
+                        <div class="box">.grid</div>
+                    </div>
+                    <div class="grid">
+                        <div class="box">.grid</div>
+                    </div>
+                    <div class="grid">
+                        <div class="box">.grid</div>
+                    </div>
+                    <div class="grid">
+                        <div class="box">.grid</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content">
+                <h4>Offsetting Columns</h4>
+                <p>Move columns to right with class <span class="color-secondary">.offset-*</span>.</p>
+    
+                <div class="grids">
+                    <div class="grid-12">
+                        <div class="box">.grid-12</div>
+                    </div>
+                    <div class="grid-12 grid-ts-6 offset-ts-6">
+                        <div class="box">.grid-12 .grid-ts-6 .offset-ts-6</div>
+                    </div>
+                    <div class="grid-12 grid-tl-4 offset-tl-4">
+                        <div class="box">.grid-12 .grid-tl-4 .offset-tl-4</div>
+                    </div>
+                    <div class="grid-12 grid-ds-3 offset-ds-6">
+                        <div class="box">.grid-12 .grid-ds-3 .offset-ds-6</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content">
+                <h4>Ordering Columns</h4>
+                <p>Move columns position with class <span class="color-secondary">.order-*</span>.</p>
+    
+                <div class="grids">
+                    <div class="grid-12 grid-ts-4 order-ts-last">
+                        <div class="box">First columns but last order on ≥ ts</div>
+                    </div>
+                    <div class="grid-12 grid-ts-4 order-ts-first">
+                        <div class="box">Second columns but first order on ≥ ts</div>
+                    </div>
+                    <div class="grid-12 grid-ts-4">
+                        <div class="box">Third columns default order</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h3>Utilities</h3>
+            <div class="content">
+                <h4>Displays</h4>
+                <p>Class for hide content:</p>
+                <div class="wrapper">
+                    <div><strong>.hide</strong>: hide on all screen</div>
+                    <div><strong>.hide-mb-only</strong>: hide on mobile screen only</div>
+                    <div><strong>.hide-ts-down</strong>: hide on tablet small screen or below</div>
+                    <div><strong>.hide-tl-down</strong>: hide on tablet large screen or below</div>
+                    <div><strong>.hide-ds-down</strong>: hide on desktop small screen or below</div>
+                    <div><strong>.hide-dl-only</strong>: hide on desktop large screen only</div>
+                    <div><strong>.hide-ds-up</strong>: hide on desktop small screen or above</div>
+                    <div><strong>.hide-tl-up</strong>: hide on tablet large screen or above</div>
+                    <div><strong>.hide-ts-up</strong>: hide on tablet small screen or above</div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
