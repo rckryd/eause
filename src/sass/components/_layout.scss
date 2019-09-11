@@ -9,39 +9,39 @@
     margin-left: auto;
 }
 
-.row {
+.grids {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -1.6rem;
-    margin-left: -1.6rem;
-    &.no-gutters {
+    margin-right: -$gutters / 2;
+    margin-left: -$gutters / 2;
+    &.guttersless {
         margin-right: 0;
         margin-left: 0;
-        > .col,
-        > [class*="col-"] {
+        > .grid,
+        > [class*="grid-"] {
             padding-right: 0;
             padding-left: 0;
         }
     }
-    > .col,
-    > [class*="col-"] {
+    > .grid,
+    > [class*="grid-"] {
         padding-right: 0;
         padding-left: 0;
         position: relative;
         width: 100%;
-        padding-right: 1.6rem;
-        padding-left: 1.6rem;
+        padding-right: $gutters / 2;
+        padding-left: $gutters / 2;
     }
 }
 
-.col {
+.grid {
     flex-basis: 0;
     flex-grow: 1;
     flex-shrink: 1;
 }
 
 @for $column from 1 through 12 {
-    .col {
+    .grid {
         &-#{$column} {
             flex: 0 0 percentage($column/12);
             max-width: percentage($column/12);
@@ -81,14 +81,14 @@
         max-width: $con-ts;
     }
 
-    .col-ts {
+    .grid-ts {
         flex-basis: 0;
         flex-grow: 1;
         flex-shrink: 1;
     }
 
     @for $column from 1 through 12 {
-        .col {
+        .grid {
             &-ts-#{$column} {
                 flex: 0 0 percentage($column/12);
                 max-width: percentage($column/12);
@@ -129,14 +129,14 @@
         max-width: $con-tl;
     }
 
-    .col-tl {
+    .grid-tl {
         flex-basis: 0;
         flex-grow: 1;
         flex-shrink: 1;
     }
 
     @for $column from 1 through 12 {
-        .col {
+        .grid {
             &-tl-#{$column} {
                 flex: 0 0 percentage($column/12);
                 max-width: percentage($column/12);
@@ -177,14 +177,14 @@
         max-width: $con-ds;
     }
 
-    .col-ds {
+    .grid-ds {
         flex-basis: 0;
         flex-grow: 1;
         flex-shrink: 1;
     }
 
     @for $column from 1 through 12 {
-        .col {
+        .grid {
             &-ds-#{$column} {
                 flex: 0 0 percentage($column/12);
                 max-width: percentage($column/12);
@@ -221,18 +221,14 @@
 // ######## ≥ DESKTOP LARGE SCREEN
 
 @include device(dl) {
-    .container {
-        max-width: $con-dl;
-    }
-
-    .col-dl {
+    .grid-dl {
         flex-basis: 0;
         flex-grow: 1;
         flex-shrink: 1;
     }
 
     @for $column from 1 through 12 {
-        .col {
+        .grid {
             &-dl-#{$column} {
                 flex: 0 0 percentage($column/12);
                 max-width: percentage($column/12);

@@ -13,10 +13,9 @@ $bp-ds          : 1216px;
 $bp-dl          : 1840px;
 
 // Max Width Container
-$con-ts         : 53.6rem;
-$con-tl         : 72rem;
-$con-ds         : 96rem;
-$con-dl         : 114.4rem;
+$con-ts         : 56rem;
+$con-tl         : 81.6rem;
+$con-ds         : 114.4rem;
 
 // ##########################################################################
 // ######## FONTS
@@ -42,5 +41,12 @@ $color-warning      : #ffb627;
 $color-error        : #e52a34;
 
 // ##########################################################################
+// ######## GRID
+$gutters            : 3.2rem;
+
+
+// ##########################################################################
 // ######## MISCELLANEOUS
-$shadow: 0 .2rem .6rem 0 rgba(128, 128, 136, 0.2);
+$shadow         : 0 .2rem .6rem 0 rgba(128, 128, 136, 0.2);
+$rounded-small  : .4rem;
+$rounded-large  : .8rem;

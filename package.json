@@ -4,7 +4,7 @@
   "description": "Eause CSS Framework",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass src/sass/main.scss dev/css/eause.css -w --output-style expanded",
+    "watch:sass": "sass --watch src/sass/main.scss:dev/css/eause.css --style expanded",
     "devserver": "live-server --open=dev",
     "start": "npm-run-all --parallel devserver watch:sass",
     "expand:css": "node-sass src/sass/main.scss dist/eause.css --output-style expanded",

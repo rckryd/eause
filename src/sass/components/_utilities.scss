@@ -13,6 +13,7 @@
     display: none !important;
 }
 
+// Show Hide Display
 @include device(ts) {
     .hide-ts-up {
         display: none !important;
@@ -37,48 +38,37 @@
     }
 }
 
-//
-
-@include r-device(down-ts) {
+@include device(down-ts) {
     .hide-mb-only {
         display: none !important;
     }
 }
 
-@include r-device(down-tl) {
+@include device(down-tl) {
     .hide-ts-down {
         display: none !important;
     }
 }
 
-@include r-device(down-ds) {
+@include device(down-ds) {
     .hide-tl-down {
         display: none !important;
     }
 }
 
-@include r-device(down-dl) {
+@include device(down-dl) {
     .hide-ds-down {
         display: none !important;
     }
 }
 
-//
+// 
 
-@include s-device(only-ts) {
-    .hide-ts-only {
-        display: none !important;
-    }
-}
-
-@include s-device(only-tl) {
-    .hide-tl-only {
-        display: none !important;
-    }
-}
-
-@include s-device(only-ds) {
-    .hide-ds-only {
-        display: none !important;
-    }
+.box {
+    padding: 1.6rem 2.4rem;
+    box-shadow: $shadow;
+    margin-bottom: 3.2rem;
+    text-align: center;
+    background-color: mix(#fff, $color-primary, 20%);
+    color: #fff;
 }
