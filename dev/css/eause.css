@@ -66,6 +66,76 @@ h6 {
   text-overflow: ellipsis;
 }
 
+.hide {
+  display: none !important;
+}
+
+@media (min-width: 528px) {
+  .hide-ts-up {
+    display: none !important;
+  }
+}
+
+@media (min-width: 864px) {
+  .hide-tl-up {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1216px) {
+  .hide-ds-up {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1840px) {
+  .hide-dl-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 527.98px) {
+  .hide-mb-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 863.98px) {
+  .hide-ts-down {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1215.98px) {
+  .hide-tl-down {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1839.98px) {
+  .hide-ds-down {
+    display: none !important;
+  }
+}
+
+@media (min-width: 528px) and (max-width: 863.98px) {
+  .hide-ts-only {
+    display: none !important;
+  }
+}
+
+@media (min-width: 864px) and (max-width: 1215.98px) {
+  .hide-tl-only {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1216px) and (max-width: 1839.98px) {
+  .hide-ds-only {
+    display: none !important;
+  }
+}
+
 .container {
   width: 100%;
   padding-right: 1.6rem;

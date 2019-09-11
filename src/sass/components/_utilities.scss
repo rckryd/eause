@@ -8,3 +8,77 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.hide {
+    display: none !important;
+}
+
+@include device(ts) {
+    .hide-ts-up {
+        display: none !important;
+    }
+}
+
+@include device(tl) {
+    .hide-tl-up {
+        display: none !important;
+    }
+}
+
+@include device(ds) {
+    .hide-ds-up {
+        display: none !important;
+    }
+}
+
+@include device(dl) {
+    .hide-dl-only {
+        display: none !important;
+    }
+}
+
+//
+
+@include r-device(down-ts) {
+    .hide-mb-only {
+        display: none !important;
+    }
+}
+
+@include r-device(down-tl) {
+    .hide-ts-down {
+        display: none !important;
+    }
+}
+
+@include r-device(down-ds) {
+    .hide-tl-down {
+        display: none !important;
+    }
+}
+
+@include r-device(down-dl) {
+    .hide-ds-down {
+        display: none !important;
+    }
+}
+
+//
+
+@include s-device(only-ts) {
+    .hide-ts-only {
+        display: none !important;
+    }
+}
+
+@include s-device(only-tl) {
+    .hide-tl-only {
+        display: none !important;
+    }
+}
+
+@include s-device(only-ds) {
+    .hide-ds-only {
+        display: none !important;
+    }
+}

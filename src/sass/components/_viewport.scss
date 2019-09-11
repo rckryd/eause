@@ -1,3 +1,4 @@
+// Mobile First
 @mixin device($breakpoint) {
     @if $breakpoint == ts {
         @media (min-width: $bp-ts) { @content };
@@ -10,5 +11,34 @@
     }
     @if $breakpoint == dl {
         @media (min-width: $bp-dl) { @content };
+    }
+}
+
+// Desktop First
+@mixin r-device($r-breakpoint) {
+    @if $r-breakpoint == down-ts {
+        @media (max-width: $bp-ts - .02) { @content };
+    }
+    @if $r-breakpoint == down-tl {
+        @media (max-width: $bp-tl - .02) { @content };
+    }
+    @if $r-breakpoint == down-ds {
+        @media (max-width: $bp-ds - .02) { @content };
+    }
+    @if $r-breakpoint == down-dl {
+        @media (max-width: $bp-dl - .02) { @content };
+    }
+}
+
+// Specific
+@mixin s-device($s-breakpoint) {
+    @if $s-breakpoint == only-ts {
+        @media (min-width: $bp-ts) and (max-width: $bp-tl - .02) { @content };
+    }
+    @if $s-breakpoint == only-tl {
+        @media (min-width: $bp-tl) and (max-width: $bp-ds - .02) { @content };
+    }
+    @if $s-breakpoint == only-ds {
+        @media (min-width: $bp-ds) and (max-width: $bp-dl - .02) { @content };
     }
 }
