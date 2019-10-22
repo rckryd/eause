@@ -18,6 +18,10 @@
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 ::selection {
   background-color: #2cabe2;
   color: #fff;
