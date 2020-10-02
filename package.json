@@ -9,10 +9,7 @@
     "start": "npm-run-all --parallel devserver watch:sass",
     "expand:css": "node-sass src/sass/eause.scss dist/eause.css --output-style expanded",
     "compress:css": "node-sass src/sass/eause.scss dist/eause.min.css --output-style compressed",
-    "build:node-sass": "npm-run-all expand:css compress:css",
-    "r-expand:css": "sass src/sass/eause.scss:dist/eause.css --style expanded",
-    "r-compress:css": "sass src/sass/eause.scss:dist/eause.min.css --style compressed",
-    "build:ruby-sass": "npm-run-all r-expand:css r-compress:css"
+    "build:node-sass": "npm-run-all expand:css compress:css"
   },
   "repository": {
     "type": "git",
