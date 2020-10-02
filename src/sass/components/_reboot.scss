@@ -1,13 +1,16 @@
 @import url($font-source);
 
 :root {
-    --color-primary: #2cabe2;
-    --color-secondary: #ff5128;
+    --color-primary: $color-primary;
+    --color-secondary: $color-secondary;
 }
 
 * {
+    outline: 0 !important;
+    -webkit-tap-highlight-color: transparent;
     margin: 0;
     padding: 0;
+    
     &,
     &::before,
     &::after {
@@ -40,21 +43,21 @@ body {
 
 h {
     &1 {
-        font-size: 6rem;
+        font-size: 60px;
     }
     &2 {
-        font-size: 4.8rem;
+        font-size: 48px;
     }
     &3 {
-        font-size: 3.2rem;
+        font-size: 32px;
     }
     &4 {
-        font-size: 2.4rem;
+        font-size: 24px;
     }
     &5 {
-        font-size: 2rem;
+        font-size: 20px;
     }
     &6 {
-        font-size: 1.8rem;
+        font-size: 18px;
     }
 }

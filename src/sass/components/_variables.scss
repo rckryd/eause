@@ -13,16 +13,16 @@ $bp-ds          : 1216px;
 $bp-dl          : 1840px;
 
 // Max Width Container
-$con-ts         : 56rem;
-$con-tl         : 81.6rem;
-$con-ds         : 114.4rem;
+$con-ts         : 560px;
+$con-tl         : 816px;
+$con-ds         : 1144px;
 
 // ##########################################################################
 // ######## FONTS
 $font-source    :'https://fonts.googleapis.com/css?family=Asap:400,700&display=swap';
 $font-family    :'Asap', sans-serif;
 $font-base      : 10px;     // for setting 'rem' value (equal = 1rem);
-$font-body      : 1.4rem;   // body text
+$font-body      : 14px;   // body text
 $fw-normal      : 400;      // font-weight: normal
 $fw-bold        : 700;      // font-weight: bold
 $lh-base        : 1.5;      // line-height
@@ -43,11 +43,11 @@ $color-error        : #e52a34;
 
 // ##########################################################################
 // ######## GRID
-$gutters            : 3.2rem;
+$gutters            : 32px;
 
 
 // ##########################################################################
 // ######## MISCELLANEOUS
-$shadow         : 0 .2rem .6rem 0 rgba(128, 128, 136, 0.2);
-$rounded-small  : .4rem;
-$rounded-large  : .8rem;
+$shadow         : 0 2px 6px 0 rgba(128, 128, 136, 0.2);
+$rounded-small  : 4px;
+$rounded-large  : 8px;

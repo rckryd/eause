@@ -1,15 +1,17 @@
 /*!
  * Eause CSS
- * (c) 2019 Ricky Riyadi
+ * (c) 2019-2020 Ricky Riyadi
  * Released under the MIT License.
  */
 @import url("https://fonts.googleapis.com/css?family=Asap:400,700&display=swap");
 :root {
-  --color-primary: #2cabe2;
-  --color-secondary: #ff5128;
+  --color-primary: $color-primary;
+  --color-secondary: $color-secondary;
 }
 
 * {
+  outline: 0 !important;
+  -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
 }
@@ -34,7 +36,7 @@ html {
 
 body {
   font-family: "Asap", sans-serif;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   color: #353535;
@@ -42,31 +44,31 @@ body {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 60px;
 }
 
 h2 {
-  font-size: 4.8rem;
+  font-size: 48px;
 }
 
 h3 {
-  font-size: 3.2rem;
+  font-size: 32px;
 }
 
 h4 {
-  font-size: 2.4rem;
+  font-size: 24px;
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 h6 {
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 
 .shadow {
-  box-shadow: 0 0.2rem 0.6rem 0 rgba(128, 128, 136, 0.2) !important;
+  box-shadow: 0 2px 6px 0 rgba(128, 128, 136, 0.2) !important;
 }
 
 .truncate {
@@ -128,27 +130,18 @@ h6 {
   }
 }
 
-.box {
-  padding: 1.6rem 2.4rem;
-  box-shadow: 0 0.2rem 0.6rem 0 rgba(128, 128, 136, 0.2);
-  margin-bottom: 3.2rem;
-  text-align: center;
-  background-color: #56bce8;
-  color: #fff;
-}
-
 .container {
   width: 100%;
-  padding-right: 1.6rem;
-  padding-left: 1.6rem;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .container-max {
   width: 100%;
-  padding-right: 1.6rem;
-  padding-left: 1.6rem;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -156,8 +149,8 @@ h6 {
 .grids {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -1.6rem;
-  margin-left: -1.6rem;
+  margin-right: -16px;
+  margin-left: -16px;
 }
 
 .grids.guttersless {
@@ -177,8 +170,8 @@ h6 {
   padding-left: 0;
   position: relative;
   width: 100%;
-  padding-right: 1.6rem;
-  padding-left: 1.6rem;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .grid {
@@ -353,7 +346,7 @@ h6 {
 
 @media (min-width: 528px) {
   .container {
-    max-width: 56rem;
+    max-width: 560px;
   }
   .grid-ts {
     flex-basis: 0;
@@ -490,7 +483,7 @@ h6 {
 
 @media (min-width: 864px) {
   .container {
-    max-width: 81.6rem;
+    max-width: 816px;
   }
   .grid-tl {
     flex-basis: 0;
@@ -627,7 +620,7 @@ h6 {
 
 @media (min-width: 1216px) {
   .container {
-    max-width: 114.4rem;
+    max-width: 1144px;
   }
   .grid-ds {
     flex-basis: 0;
